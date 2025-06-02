@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go-version: ['1.19', '1.20']
+        python-version: ['3.9', '3.10']
+        node-version: ['16', '18']
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v3
+      with:
+        go-version: ${{ matrix.go-version }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: |
+        go mod download
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        if [ -f package.json ]; then npm install; fi
+
+    - name: Run tests
+      run: |
+        if [ -f "*_test.go" ]; then go test ./...; fi
+        if [ -f "test_*.py" ]; then python -m pytest; fi
+        if [ -f "package.json" ]; then npm test; fi
+
+    - name: Build
+      run: |
+        if [ -f "go.mod" ]; then go build ./...; fi
+        if [ -f "setup.py" ]; then python setup.py build; fi
+        if [ -f "package.json" ]; then npm run build; fi 

@@ -1,28 +1,29 @@
 name: 🐛 Bug 报告
-description: 创建 bug 报告以帮助我们改进
+description: 提交一个缺陷
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        感谢您花时间填写这份 bug 报告！
-  
+        提交前请先搜索已有 Issue，避免重复。
+        如果是安全漏洞，请勿在此提交，按 [安全策略](https://github.com/MoTeam-cn/.github/blob/main/SECURITY.md) 邮件报告。
+
   - type: input
     id: version
     attributes:
       label: 版本
-      description: 您使用的是哪个版本？
-      placeholder: "例如: v1.0.0"
+      description: 出现问题的版本
+      placeholder: "例如 v1.0.0，或 commit 短哈希"
     validations:
       required: true
 
   - type: textarea
     id: what-happened
     attributes:
-      label: 发生了什么？
-      description: 请详细描述您遇到的问题
-      placeholder: "请尽可能详细地描述问题..."
+      label: 问题描述
+      description: 实际发生了什么
+      placeholder: 描述你观察到的现象
     validations:
       required: true
 
@@ -30,11 +31,11 @@ body:
     id: reproduce
     attributes:
       label: 复现步骤
-      description: 如何复现这个问题？
+      description: 如何稳定复现
       placeholder: |
-        1. 首先 '...'
-        2. 然后 '...'
-        3. 最后 '...'
+        1. ...
+        2. ...
+        3. ...
     validations:
       required: true
 
@@ -42,8 +43,8 @@ body:
     id: expected
     attributes:
       label: 期望行为
-      description: 您期望看到什么？
-      placeholder: "描述您期望的结果..."
+      description: 你预期应该发生什么
+      placeholder: 描述期望的结果
     validations:
       required: true
 
@@ -63,5 +64,5 @@ body:
     id: logs
     attributes:
       label: 相关日志
-      description: 如果有相关的错误日志，请在此粘贴
-      render: shell 
+      description: 有报错日志的话贴在这里
+      render: shell

@@ -1,83 +1,64 @@
 # 贡献指南
 
-感谢您考虑为 MoTeam 做出贡献！以下是一些指导原则，帮助您参与我们的项目。
+## 提交改动
 
-## 如何贡献
+1. Fork 目标仓库
+2. 从 `main` 切出分支：`git checkout -b feature/your-feature`
+3. 提交改动并推送到你的 Fork
+4. 向上游仓库发起 Pull Request
 
-1. Fork 项目
-2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 打开一个 Pull Request
+改动较大时，建议先开 Issue 说明思路，避免白做。
 
-## 提交规范
+## 提交信息
 
-我们使用 [Conventional Commits](https://www.conventionalcommits.org/) 规范，提交信息格式如下：
+使用 [Conventional Commits](https://www.conventionalcommits.org/zh-hans/) 格式：
 
 ```
 <type>(<scope>): <description>
-
-[optional body]
-
-[optional footer]
 ```
 
-### 类型 (type)
+常用 type：
 
-- `feat`: 新功能
-- `fix`: 修复
-- `docs`: 文档更改
-- `style`: 代码格式修改
-- `refactor`: 代码重构
-- `test`: 测试用例修改
-- `chore`: 其他修改
+| type | 用途 |
+| --- | --- |
+| `feat` | 新功能 |
+| `fix` | 修复缺陷 |
+| `docs` | 文档 |
+| `refactor` | 重构，不改变外部行为 |
+| `test` | 测试 |
+| `chore` | 构建、依赖等杂项 |
 
-### 示例
+示例：
 
 ```
-feat(auth): 添加用户登录功能
-
-- 实现用户名密码登录
-- 添加 JWT 认证
-- 增加登录页面
+feat(auth): 支持邮箱验证码登录
 ```
-
-## 开发流程
-
-1. 请先查看 [Issues](https://github.com/MoTeam-cn/issues) 列表
-2. 如果您想处理某个 issue，请先评论说明
-3. 开发完成后提交 PR
-4. 等待审核和合并
 
 ## 代码风格
 
-- Go 代码遵循 [Go 官方规范](https://golang.org/doc/effective_go)
-- Python 代码遵循 [PEP 8](https://www.python.org/dev/peps/pep-0008/)
-- JavaScript 代码使用 ESLint 标准配置
+- Go：遵循 [Effective Go](https://go.dev/doc/effective_go)，提交前跑 `gofmt`
+- Python：遵循 [PEP 8](https://peps.python.org/pep-0008/)
+- JavaScript：使用仓库内的 ESLint 配置
 
-## 测试要求
+各仓库可能有额外约定，以仓库内的配置文件为准。
 
-- 所有新功能必须包含测试用例
-- 所有修复必须包含相关的测试用例
-- 测试覆盖率不得降低
+## 测试与文档
 
-## 文档要求
+- 新功能和缺陷修复都应带上对应测试
+- 改动的公开接口需要同步更新文档
+- 复杂逻辑加注释说明「为什么」，而不是「做了什么」
 
-- 新功能需要更新相关文档
-- 更新 API 时需要更新对应的 API 文档
-- 重要的代码需要添加注释
+## 反馈问题
 
-## 问题反馈
+请到对应仓库的 Issues 提交，并附上：
 
-- 使用 GitHub Issues 提交问题
-- 清晰地描述问题
-- 提供复现步骤
-- 附上相关的日志或截图
+- 复现步骤
+- 期望结果与实际结果
+- 版本与运行环境
+- 相关日志或截图
 
-## 联系我们
+## 联系方式
 
-- 网站：https://www.moteam.top
+- 官网：https://www.moteam.top
 - 邮箱：momail@vip.qq.com
-- B站：https://space.bilibili.com/1834260927
-
-感谢您的贡献！ 
+- B 站：https://space.bilibili.com/1834260927

@@ -5,9 +5,17 @@
 
   **开源技术团队 · 2023 年 2 月成立**
 
-  [![Website](https://img.shields.io/badge/website-moteam.top-2f6fed?style=flat-square)](https://www.moteam.top)
-  [![Bilibili](https://img.shields.io/badge/Bilibili-MoTeam-fb7299?style=flat-square&logo=bilibili&logoColor=white)](https://space.bilibili.com/1834260927)
-  [![Email](https://img.shields.io/badge/email-momail@vip.qq.com-d14836?style=flat-square)](mailto:momail@vip.qq.com)
+  [![Website](https://img.shields.io/badge/website-moteam.top-2f6fed?style=flat-square)](https://www.moteam.top) [![Bilibili](https://img.shields.io/badge/Bilibili-MoTeam-fb7299?style=flat-square&logo=bilibili&logoColor=white)](https://space.bilibili.com/1834260927) [![Email](https://img.shields.io/badge/email-momail@vip.qq.com-d14836?style=flat-square)](mailto:momail@vip.qq.com)
+
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" />
+  <br />
+  <img src="https://img.shields.io/github/stars/MoTeam-cn?style=flat-square&logo=github&label=Stars" alt="Stars" />
+  <img src="https://img.shields.io/github/followers/MoTeam-cn?style=flat-square&logo=github&label=Followers" alt="Followers" />
 </div>
 
 ## 项目
@@ -28,9 +36,3 @@
 ## 参与
 
 任何人都可以提交 Issue 或 Pull Request，无需事先加入团队。提交规范见[贡献指南](https://github.com/MoTeam-cn/.github/blob/main/CONTRIBUTING.md)。
-
-## 联系
-
-- 官网：https://www.moteam.top
-- B 站：https://space.bilibili.com/1834260927
-- 邮箱：momail@vip.qq.com

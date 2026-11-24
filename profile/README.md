@@ -5,7 +5,7 @@
 
   **开源技术团队 · 2023 年 2 月成立**
 
-  [![Website](https://img.shields.io/badge/website-moteam.top-2f6fed?style=flat-square)](https://www.moteam.top) [![Bilibili](https://img.shields.io/badge/Bilibili-MoTeam-fb7299?style=flat-square&logo=bilibili&logoColor=white)](https://space.bilibili.com/1834260927) [![Email](https://img.shields.io/badge/email-momail@vip.qq.com-d14836?style=flat-square)](mailto:momail@vip.qq.com)
+  [![Website](https://img.shields.io/badge/website-mo.team-2f6fed?style=flat-square)](https://mo.team) [![Bilibili](https://img.shields.io/badge/Bilibili-MoTeam-fb7299?style=flat-square&logo=bilibili&logoColor=white)](https://space.bilibili.com/1834260927) [![Email](https://img.shields.io/badge/email-momail@vip.qq.com-d14836?style=flat-square)](mailto:momail@vip.qq.com)
 
   <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
   <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
